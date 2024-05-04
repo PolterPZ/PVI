@@ -1,0 +1,62 @@
+.createAndEditPop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 10%;
+  left: 18%;
+  width: 70%;
+  height: 80vh;
+  border: 1px solid gray;
+  z-index: 2;
+  border-radius: 15px;
+  background-color: #fff;
+  font-size: 25px;
+}
+.createAndEditPop__header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+.createAndEditPop__title {
+  font-size: 30px;
+}
+.createAndEditPop__closeBtn {
+  padding: 10px 20px;
+}
+.createAndEditPop__body {
+  padding: 10px;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+.createAndEditPop__body > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+.createAndEditPop__form {
+  display: flex;
+  justify-content: space-between;
+}
+.createAndEditPop__label {
+  margin-right: 30px;
+}
+.createAndEditPop__select {
+  max-width: 135px;
+}
+.createAndEditPop__input {
+  max-width: 135px;
+}
+.createAndEditPop__footer {
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+  column-gap: 20px;
+}
+.createAndEditPop__ok {
+  padding: 10px 20px;
+}
+.createAndEditPop__create {
+  padding: 10px 20px;
+}

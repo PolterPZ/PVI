@@ -1,0 +1,30 @@
+._status {
+    width: 15px;
+    height: 15px;
+    background-color: gray;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  
+  ._active-link {
+    color: darkgray;
+    font-weight: 600;
+  }
+  ._active-status{
+    background-color: green;
+  }
+  ._active-notify{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  ._line{
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+  }
+  

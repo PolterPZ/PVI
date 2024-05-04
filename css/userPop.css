@@ -1,0 +1,36 @@
+.userPop_toggle {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s opacity ease;
+}
+
+.userPop {
+  background-color: #eff7f6;
+  border: 5px solid #709775;
+  padding: 5px;
+  width: 200px;
+  position: absolute;
+  visibility: visible;
+  position: absolute;
+  opacity: 1;
+  top: 75px;
+  right: 1%;
+}
+.userPop__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 4px;
+}
+.userPop__item {
+  display: flex;
+  text-align: center;
+}
+.userPop__item a {
+  color: #fff;
+  width: 100%;
+  padding: 5px;
+  background-color: #305736;
+  border-radius: 5px;
+}

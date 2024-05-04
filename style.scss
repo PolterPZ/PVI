@@ -1,0 +1,228 @@
+//HEADER
+.hedaer {
+  padding: 0 15px;
+  @media (max-width: 768px) {
+    padding: 0px 10px;
+  }
+  @media (max-width: 350px) {
+    padding: 0px 5px;
+  }
+  max-width: 100%;
+  min-height: 70px;
+  background-color: #ffb5a7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  &__logo {
+    color: #48332f;
+    font-size: calc(16px + 10 * ((100vw - 320px) / (1600)));
+    padding: 0px 10px;
+  }
+
+  &__info {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &__notify {
+    width: 30px;
+    height: 30px;
+    //   font-size: calc(16px + 5 * ((100vw - 320px) / (1600)));
+    color: #48332f;
+    position: relative;
+    cursor: pointer;
+    background: none;
+  }
+}
+.account-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  &__logo {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid #48332f;
+    border-radius: 50%;
+    svg {
+      color: #48332f;
+    }
+  }
+
+  &__nickname {
+    color: #48332f;
+    font-size: 20px;
+  }
+}
+
+//MAIN
+.main {
+  margin-top: 45px;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    display: block;
+    padding: 0px 15px;
+  }
+  @media (max-width: 350px) {
+    padding: 0px 5px;
+  }
+  &__aside {
+    flex: 0 0 200px;
+  }
+
+  &__container {
+    flex: 1 1 auto;
+    @media (max-width: 400px) {
+      max-width: 390px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 100;
+    @media (max-width: 770px) {
+      align-self: center;
+    }
+  }
+  &__btn {
+    width: 35px;
+    height: 35px;
+    align-self: flex-end;
+    font-size: 15px;
+    border: 1px solid gray;
+    @media (max-width: 770px) {
+      align-self: center;
+    }
+  }
+  &__table {
+    margin-top: 20px;
+    @media (max-width: 768px) {
+      margin-top: 15px;
+    }
+
+    @media (max-width: 425px) {
+      margin-top: 5px;
+    }
+  }
+}
+// SIDEBAR
+.aside-main {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 16px;
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      column-gap: 20px;
+    }
+  }
+
+  &__item {
+    font-size: 21px;
+    animation-delay: 0.3s;
+    transition: width 0.3s ease;
+    a {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+//TABLE
+.table-main {
+  width: 100%;
+
+  &__header {
+  }
+
+  &__row {
+  }
+
+  &__col {
+    // button:not(:last-child){
+    //   //  margin-right: 3px;
+    // }
+    text-align: center;
+    padding: 15px 5px;
+    font-size: calc(12px + 10 * ((100vw - 320px) / (1600)));
+    @media (max-width: 370px) {
+      padding: 7px 2px;
+      width: 30px;
+    }
+    label {
+      font-size: calc(12px + 10 * ((100vw - 320px) / (1600)));
+    }
+    span {
+      font-size: calc(12px + 10 * ((100vw - 320px) / (1600)));
+    }
+  }
+
+  &__body {
+    font-weight: 700;
+    .table-main__col {
+      padding: 5px;
+      @media (max-width: 370px) {
+        padding: 0;
+      }
+    }
+  }
+
+  &__btn {
+    width: 35px;
+    height: 35px;
+    border: 2px solid grey;
+    background: none;
+    cursor: pointer;
+
+    svg {
+      border: 1px;
+    }
+  }
+}
+
+.nav-table-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 15px;
+  &__leftArrow {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+  }
+
+  &__rightArrow {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+  }
+  &__body {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+  }
+
+  &__link {
+    font-size: 25px;
+    border: 1px solid gray;
+    padding: 5px 15px;
+  }
+}

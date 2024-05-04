@@ -1,0 +1,101 @@
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes rotateFastNotify {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotateFastEdit {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotateFastClose {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes stretch {
+  0% {
+    letter-spacing: 0;
+  }
+  50% {
+    letter-spacing: 0.5em;
+  }
+  100% {
+    letter-spacing: 0;
+  }
+}
+.aside-main__item a {
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  transition: width 0.3s ease;
+}
+
+.aside-main__item a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000; /* Change the color as needed */
+  transition: width 0.3s ease;
+}
+
+.aside-main__item a:hover::after {
+  animation: underline 0.3s forwards;
+}
+
+.header__logo {
+  display: inline-block;
+  white-space: nowrap;
+}
+.header__logo:hover {
+  animation: stretch 1.5s ease;
+}
+
+.header__notify:hover svg {
+  animation: rotateFastNotify 0.3s ease-out;
+}
+
+._edit:hover svg {
+  animation: rotateFastEdit 0.3s ease-out;
+}
+
+._close:hover svg {
+  animation: rotateFastEdit 0.3s ease-out;
+}
+
+button:not(.header__notify, .account-header) {
+  transition: all 0.3s ease;
+}
+button:not(.header__notify, .account-header):hover {
+  background-color: #ffb5a7;
+  transition: all 0.3s ease;
+}
